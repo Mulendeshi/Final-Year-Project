@@ -1,0 +1,55 @@
+.App {
+  
+  height: 100vh;
+  width: 100vh;
+  background-color: #15172e;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+/* App.css */
+.app-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100vh;
+  /* Optionally, you can add more styles like padding, margin, etc. */
+}
+
+.sidebar {
+  flex: 0 0 20%; /* Set the width for left and right sidebars */
+  /* Add additional styles for sidebar such as background, padding, etc. */
+}
+
+.left-sidebar {
+  /* Styles for left sidebar */
+}
+
+.right-sidebar {
+  /* Styles for right sidebar */
+}
+
+.mid-section {
+  flex: 1; /* Take remaining space */
+  /* Add additional styles for mid section like padding, margin, etc. */
+}
+
+.input-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* 8 columns */
+  gap: 10px; /* Gap between input boxes */
+  /* Add more styles for input container like padding, overflow, etc. */
+}
+
+input {
+  width: 100%; /* Input box takes full width of its container */
+  /* Add more styles for input like padding, margin, font-size, etc. */
+}

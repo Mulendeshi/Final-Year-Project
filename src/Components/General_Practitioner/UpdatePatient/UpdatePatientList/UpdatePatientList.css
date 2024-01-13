@@ -1,0 +1,87 @@
+.scrollable-table-container {
+    width: 100%;
+    height: 300px; /* Define the initial height of the container */
+    overflow-y: hidden; /* Hide vertical scrollbar by default */
+    position: relative;
+  }
+  
+  .scrollable-area {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; /* Enable vertical scrollbar when content exceeds the container height */
+  }
+  
+  /* Styling for table */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .wrapper {
+    grid-column: 2;
+    grid-row: 1;
+    flex: 1; /* NB: remember To Occupy remaining space */
+    width: calc(60%);
+    background-color: rgba(255, 255, 255, 0);
+    
+    border-radius: 10px;
+    padding: 20px 30px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -100px;
+    word-wrap: break-word;
+    white-space: pre-line;
+    max-width: calc(100%-300px);
+    position: fixed;
+    margin-top: 80px;
+  }
+  /* Styling for table header */
+  .table th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Styling for table rows */
+  .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: #fff;
+  }
+  
+  /* Show scrollbar on hover */
+  .scrollable-table-container:hover {
+    overflow-y: auto;
+  }
+  
+
+  .selected-row {
+    background-color: #e2e2e2;
+  }
+  
+  /* Style for the buttons */
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+  
+  /* Style for the button */
+  .buttons button {
+    width: 60px;
+    min-height: 45px;
+    background: azure;
+    margin: 30px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, -1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+
+  }
